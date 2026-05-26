@@ -7,7 +7,7 @@ import EmailCapture from "@/components/email-capture";
 export const metadata: Metadata = {
   title: "AI for Academic Libraries",
   description:
-    "A structured learning path from AI basics to workflow automation and building your own tools — mapped to ACRL AI Competencies (2025). Practitioner voice from a working community college librarian.",
+    "A structured learning path from AI basics to workflow automation and building your own tools - mapped to ACRL AI Competencies (2025). Practitioner voice from a working community college librarian.",
 };
 
 const audiencePaths = [
@@ -16,7 +16,7 @@ const audiencePaths = [
     label: "Practicing Librarian",
     subtitle: "Reference, instruction, research support",
     description:
-      "You sit at a reference desk or teach library sessions. You want AI to help you today — drafting emails, building lesson plans, supporting student researchers.",
+      "You sit at a reference desk or teach library sessions. You want AI to help you today - drafting emails, building lesson plans, supporting student researchers.",
     color: "#6d28d9",
     lightColor: "#f5f3ff",
     borderColor: "#ddd6fe",
@@ -59,7 +59,7 @@ export default function HomePage() {
           </p>
 
           <p className="text-lg sm:text-xl text-stone-600 leading-relaxed max-w-2xl mx-auto mb-8">
-            A structured learning path from AI basics to workflow automation and building your own tools — mapped to ACRL AI Competencies (2025).
+            A structured learning path from AI basics to workflow automation and building your own tools - mapped to ACRL AI Competencies (2025).
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -125,7 +125,7 @@ export default function HomePage() {
               Start with your role
             </h2>
             <p className="text-stone-500 text-base max-w-xl mx-auto">
-              The curriculum covers both paths. Select the one that matches your work — or browse everything.
+              The curriculum covers both paths. Select the one that matches your work - or browse everything.
             </p>
           </div>
 
@@ -288,10 +288,10 @@ export default function HomePage() {
             Taught by someone who actually works in a library
           </h2>
           <p className="text-stone-600 leading-relaxed mb-3">
-            I&apos;m a library associate at a community college in St. Louis. I test these tools at my reference desk, in my instruction sessions, and in the unglamorous administrative work that fills the hours in between.
+            I&apos;m an MLIS student and library associate at a community college in St. Louis. I use these tools in my own graduate research, in my MLIS coursework, and in the day-to-day work of the circulation desk.
           </p>
           <p className="text-stone-600 leading-relaxed mb-6">
-            This curriculum is what I wish had existed when I started. It&apos;s mapped to the ACRL AI Competencies framework — not because frameworks make things credible, but because the framework is actually good and deserves to be taught well.
+            This curriculum is what I wish had existed when I started. It&apos;s mapped to the ACRL AI Competencies framework - not because the framework makes things credible, but because the framework is actually good and deserves to be taught well.
           </p>
           <Link
             href="/about"

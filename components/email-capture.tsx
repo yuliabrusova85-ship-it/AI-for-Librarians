@@ -80,7 +80,7 @@ export default function EmailCapture({
         </div>
         <p className="font-semibold text-stone-900 mb-1">You&apos;re on the list.</p>
         <p className="text-sm text-stone-500">
-          We&apos;ll notify you when new modules publish — no spam, ever.
+          We&apos;ll notify you when new modules publish - no spam, ever.
         </p>
       </div>
     );
@@ -190,7 +190,7 @@ export default function EmailCapture({
         Stay in the loop
       </h3>
       <p className="text-sm text-stone-600 mb-5">
-        New modules publish regularly. No spam — just a note when something new
+        New modules publish regularly. No spam - just a note when something new
         is ready.
       </p>
       <form onSubmit={handleSubmit} className="space-y-3">

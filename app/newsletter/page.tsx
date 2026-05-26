@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import EmailCapture from "@/components/email-capture";
 
 export const metadata: Metadata = {
-  title: "Newsletter — AI for Academic Libraries",
+  title: "Newsletter - AI for Academic Libraries",
   description:
     "Get notified when new modules publish. No spam, ever. One email when something new is ready.",
 };
@@ -15,7 +15,7 @@ const upcomingModules = [
     level: "Level 3",
   },
   {
-    title: "Agentic AI — What It Means",
+    title: "Agentic AI - What It Means",
     description:
       "What AI agents actually are, how Claude Projects functions as a light agent, and real library use cases.",
     level: "Level 3",
@@ -50,13 +50,13 @@ export default function NewsletterPage() {
           style={{ backgroundColor: "#E1F5EE", borderColor: "#b2e8d4", color: "#0F6E56" }}
         >
           <span className="w-1.5 h-1.5 rounded-full bg-green-500" aria-hidden="true" />
-          Free newsletter — no spam, ever
+          Free newsletter - no spam, ever
         </div>
         <h1 className="text-3xl sm:text-4xl font-bold text-stone-900 mb-4">
           Get notified when new modules publish
         </h1>
         <p className="text-lg text-stone-600 leading-relaxed max-w-xl mx-auto">
-          Level 3 modules are in development — vibe coding, workflow automation, agentic AI, and systems integration. Sign up and we&apos;ll send you one email when each one is ready.
+          Level 3 modules are in development - vibe coding, workflow automation, agentic AI, and systems integration. Sign up and we&apos;ll send you one email when each one is ready.
         </p>
       </header>
 
@@ -108,7 +108,7 @@ export default function NewsletterPage() {
           One email when a new module publishes. No weekly roundups. No promotional content. Unsubscribe anytime with one click.
         </p>
         <p className="text-sm text-stone-500">
-          Emails go to the subscriber list only — we don&apos;t share or sell addresses.
+          Emails go to the subscriber list only - we don&apos;t share or sell addresses.
         </p>
       </div>
     </div>

@@ -2,7 +2,7 @@
 
 A structured, multi-page learning portal that teaches academic librarians how to use AI — from absolute beginner to building their own tools. Mapped to the **ACRL AI Competencies for Academic Library Workers (October 2025)** at the sub-competency level.
 
-**Live site:** https://yuliabrusova85-ship-it.github.io/AI-for-Librarians/
+**Live site:** *(deploy to Vercel — see deployment section)*  
 **Built by:** A reference and instruction librarian at St. Louis Community College  
 **Tech stack:** Next.js 14 · Tailwind CSS · TypeScript · Vercel
 
@@ -15,8 +15,10 @@ A practitioner-first learning portal with 16 modules across three levels:
 | Level | Focus | Modules | Status |
 |-------|-------|---------|--------|
 | **Foundations** | How AI works, how to use it, ethics | 01–05 | ✅ Published |
-| **Applied** | Research support, instruction, metadata, reference | 06–11 | ✅ Published |
+| **Applied** | Research support, instruction, metadata, collections, prompt library, administration | 06–11 | ✅ Published |
 | **Advanced** | Automation, agentic AI, vibe coding, systems integration | 12–16 | 🔒 Coming soon |
+
+**Published as of May 2026:** Modules 01–11 (10 modules). Module 14 (Vibe coding) content is written but held pending Level 3 launch.
 
 Level 3 is the differentiator — no other library portal, course, or LibGuide teaches vibe coding for library practitioners, workflow automation, or agentic AI in library contexts (verified May 2026).
 
@@ -142,6 +144,7 @@ interface ModuleContent {
   intro: string;                       // Opening practitioner-voice paragraph
   sections: { heading: string; body: string }[];
   practitionerNote?: string;           // Optional "From my library" box
+  summary?: string[];                  // 5–6 bullet takeaways shown at module end
 }
 ```
 
@@ -191,27 +194,27 @@ Five guiding mindsets thread through the curriculum: **Curiosity · Skepticism �
 | 05 | Critical evaluation of AI output | Both | 3.1–3.4, 2.4 |
 
 ### Level 2: Applied (Modules 06–11)
-*Role-split. All published at launch.*
+*Role-split. All published.*
 
-| # | Module | Audience | ACRL Sub-competencies |
-|---|--------|----------|----------------------|
-| 06 | AI for research support | Practicing | 4.1, 4.4, 3.2 |
-| 07 | Reference & instruction | Practicing | 4.1, 4.2, 4.3 |
-| 08 | Metadata & cataloging | Digital | 4.1, 3.4, 4.4 |
-| 09 | Digital collections & discovery | Digital | 4.1, 4.4, 3.2 |
-| 10 | Prompt library for library work | Both | 4.3, 4.1 |
-| 11 | Making the case to administration | Both | 1.4, 1.5, 4.2 |
+| # | Module | Audience | ACRL Sub-competencies | Status |
+|---|--------|----------|----------------------|--------|
+| 06 | AI for research support | Practicing | 4.1, 4.4, 3.2 | ✅ |
+| 07 | Reference & instruction | Practicing | 4.1, 4.2, 4.3 | ✅ |
+| 08 | Metadata & cataloging | Digital | 4.1, 3.4, 4.4 | ✅ |
+| 09 | Digital collections & discovery | Digital | 4.1, 4.4, 3.2 | ✅ |
+| 10 | Prompt library for library work | Both | 4.3, 4.1 | ✅ |
+| 11 | Making the case to administration | Both | 1.4, 1.5, 4.2 | ✅ |
 
 ### Level 3: Advanced (Modules 12–16)
 *Both audiences. Coming soon — ★ no competing library-sector content exists for any of these.*
 
-| # | Module | Audience | Gap |
-|---|--------|----------|-----|
-| 12 | Automating repetitive tasks | Both | ★ First in field |
-| 13 | Agentic AI — what it means | Both | ★ First in field |
-| 14 | Vibe coding for librarians | Both | ★ First in field |
-| 15 | AI & library systems integration | Digital | ★ First in field |
-| 16 | Your AI strategy & next steps | Both | ★ First in field |
+| # | Module | Audience | Gap | Status |
+|---|--------|----------|-----|--------|
+| 12 | Automating repetitive tasks | Both | ★ First in field | 🔒 |
+| 13 | Agentic AI — what it means | Both | ★ First in field | 🔒 |
+| 14 | Vibe coding for librarians | Both | ★ First in field | 🔒 (written, held) |
+| 15 | AI & library systems integration | Digital | ★ First in field | 🔒 |
+| 16 | Your AI strategy & next steps | Both | ★ First in field | 🔒 |
 
 ---
 

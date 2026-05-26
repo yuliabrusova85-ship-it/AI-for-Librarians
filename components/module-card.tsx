@@ -98,7 +98,7 @@ export default function ModuleCard({ module }: { module: Module }) {
       <Link
         href="/newsletter"
         className="block h-full opacity-85 hover:opacity-100 transition-opacity"
-        aria-label={`${module.title} — coming soon. Sign up to be notified.`}
+        aria-label={`${module.title} - coming soon. Sign up to be notified.`}
       >
         {cardContent}
       </Link>

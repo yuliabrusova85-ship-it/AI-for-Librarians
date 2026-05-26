@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { modules } from "@/content/modules";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ai-for-academic-libraries.vercel.app";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ai-in-academic-libraries.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [

@@ -23,7 +23,7 @@ export async function generateMetadata({
   const mod = getModuleBySlug(params.slug);
   if (!mod) return {};
   return {
-    title: `${mod.title} — AI for Academic Libraries`,
+    title: `${mod.title} - AI for Academic Libraries`,
     description: mod.description,
   };
 }
@@ -212,19 +212,6 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
             </section>
           ))}
 
-          {mod.content.practitionerNote && (
-            <div
-              className="rounded-xl p-6 mt-10 border"
-              style={{ backgroundColor: "#E1F5EE", borderColor: "#b2e8d4" }}
-            >
-              <p className="text-xs font-semibold uppercase tracking-wide mb-2" style={{ color: "#0F6E56" }}>
-                From my library
-              </p>
-              <p className="text-stone-700 leading-relaxed text-sm italic">
-                {mod.content.practitionerNote}
-              </p>
-            </div>
-          )}
 
           {mod.content.summary && mod.content.summary.length > 0 && (
             <div className="rounded-xl p-6 mt-10 border border-stone-200 bg-stone-50">

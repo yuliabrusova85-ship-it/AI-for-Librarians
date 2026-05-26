@@ -46,11 +46,23 @@ All curriculum data is in `content/modules.ts`. Each `Module` object has:
 - `acrlSubCompetencies` — specific sub-competency codes (e.g. `"2.1"`, `"3.1"`)
 - `topics` — bullet list shown on the module card
 - `objectives` — learning objectives
-- `content` — optional rich content (`intro`, `sections[]`, `practitionerNote`, `summary[]`)
+- `content` — optional rich content object (see below)
 - `relatedModules` — slugs of related modules
 - `isGap` — marks a planned module not yet written
 
+`content` shape:
+```ts
+{
+  intro: string                              // Opening practitioner-voice paragraph
+  sections: { heading: string; body: string }[]  // Main prose sections (6–7 per module)
+  practitionerNote?: string                  // Optional personal "from my library" reflection
+  summary?: string[]                         // 5–6 bullet takeaways shown at module end
+}
+```
+
 Status values: `"published"` | `"coming-soon"`
+
+**Current publish status (May 2026):** Modules 01–11 published. Module 14 content written but status set to `"coming-soon"` pending Level 3 launch. Modules 12, 13, 15, 16 are stubs.
 
 ## Curriculum levels
 
@@ -62,7 +74,18 @@ Status values: `"published"` | `"coming-soon"`
 
 ## Writing voice
 
-Content is written in Yulia's practitioner voice — first-person, academic but accessible, honest about AI limitations. The phrase "It is evident that" and formal hedging are intentional stylistic choices. Do not flatten this into generic AI writing. Preserve the practitioner perspective when editing module content.
+Content is written in Yulia's practitioner voice. Key style markers to preserve:
+
+- **First person** — "I have found," "In my practice," "At my community college library"
+- **Long prose paragraphs** — no bullet points inside section bodies; everything in full sentences
+- **"For example:" construction** — used frequently mid-paragraph to make abstract points concrete
+- **"Such" as a callback pronoun** — "Such a workflow...," "Such a distinction..."
+- **"In order to..."** — preferred over "To..." for formal transitions
+- **"Additionally" / "Furthermore"** — paragraph-level transitions
+- **Professional boundary statements** — each section ends with a clear statement about where human judgment remains irreplaceable
+- **No hedging** — confident declarative voice; "The model does not..." not "The model may not..."
+
+Do not flatten this into generic AI writing. Preserve the practitioner perspective when editing module content. The `practitionerNote` field is always personal and specific — a real story, not a general observation.
 
 ## Key conventions
 
@@ -74,7 +97,11 @@ Content is written in Yulia's practitioner voice — first-person, academic but 
 
 ## Common tasks
 
-**Add a new module:** Add an entry to `content/modules.ts`. Set `status: "coming-soon"` and `content: undefined` until content is written. Set `isGap: false` once the entry is intentional.
+**Publish a module:** Find the module in `content/modules.ts`, change `status: "coming-soon"` → `status: "published"`, add the full `content` block with `intro`, `sections[]`, `practitionerNote`, and `summary[]`. Run `npm run build` before pushing.
+
+**Write a new module:** Follow the 6-section prose structure used in modules 09–11. Research the topic first, then write in Yulia's voice. Target ~3,500–4,500 words of content, ~20 min reading time. Always do `npm run build` to verify TypeScript before committing.
+
+**Close a published module (revert to coming-soon):** Change `status: "published"` → `status: "coming-soon"`. Content is preserved.
 
 **Edit About page:** `app/about/page.tsx` — also update the `metadata.description` to stay in sync.
 

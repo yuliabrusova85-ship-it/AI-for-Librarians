@@ -3,16 +3,16 @@ import "./globals.css";
 import Nav from "@/components/nav";
 import Footer from "@/components/footer";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ai-for-academic-libraries.vercel.app";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ai-in-academic-libraries.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "AI for Academic Libraries — taught by a librarian, not a vendor",
+    default: "AI for Academic Libraries - taught by a librarian, not a vendor",
     template: "%s | AI for Academic Libraries",
   },
   description:
-    "A structured learning path from AI basics to workflow automation and building your own tools — mapped to ACRL AI Competencies (2025). Taught by a practicing academic librarian.",
+    "A structured learning path from AI basics to workflow automation and building your own tools - mapped to ACRL AI Competencies (2025). Taught by a practicing academic librarian.",
   keywords: [
     "AI for academic libraries",
     "AI training for librarians",
@@ -26,16 +26,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "AI for Academic Libraries",
-    title: "AI for Academic Libraries — taught by a librarian, not a vendor",
+    title: "AI for Academic Libraries - taught by a librarian, not a vendor",
     description:
-      "A structured learning path from AI basics to workflow automation and building your own tools — mapped to ACRL AI Competencies (2025). Taught by a practicing academic librarian.",
+      "A structured learning path from AI basics to workflow automation and building your own tools - mapped to ACRL AI Competencies (2025). Taught by a practicing academic librarian.",
     url: SITE_URL,
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI for Academic Libraries — taught by a librarian, not a vendor",
+    title: "AI for Academic Libraries - taught by a librarian, not a vendor",
     description:
-      "A structured learning path from AI basics to workflow automation and building your own tools — mapped to ACRL AI Competencies (2025). Taught by a practicing academic librarian.",
+      "A structured learning path from AI basics to workflow automation and building your own tools - mapped to ACRL AI Competencies (2025). Taught by a practicing academic librarian.",
   },
 };
 

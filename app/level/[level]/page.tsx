@@ -23,7 +23,7 @@ export async function generateMetadata({
 
   const meta = levelMeta[level];
   return {
-    title: `${meta.label} — AI for Academic Libraries`,
+    title: `${meta.label} - AI for Academic Libraries`,
     description: meta.description,
   };
 }
@@ -33,7 +33,7 @@ const levelConfig = {
     accent: "#0F6E56",
     bg: "#E1F5EE",
     border: "#b2e8d4",
-    who: "All librarians — both practicing and digital.",
+    who: "All librarians - both practicing and digital.",
     audience:
       "This level is for everyone. Whether you work at a reference desk or in a systems role, these five modules give you the mental models and skills you need before anything else.",
     prerequisite: null,
@@ -125,7 +125,7 @@ export default function LevelPage({ params }: { params: { level: string } }) {
 
         {/* Modules */}
         {isAdvanced ? (
-          /* Advanced — coming soon state */
+          /* Advanced - coming soon state */
           <div>
             <div className="rounded-xl border p-8 mb-8 text-center" style={{ borderColor: config.border, backgroundColor: config.bg }}>
               <div

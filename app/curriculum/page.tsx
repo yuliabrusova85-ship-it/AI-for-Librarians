@@ -4,9 +4,9 @@ import { modules, levelMeta } from "@/content/modules";
 import ModuleCard from "@/components/module-card";
 
 export const metadata: Metadata = {
-  title: "Full Curriculum — 16 Modules Across 3 Levels",
+  title: "Full Curriculum - 16 Modules Across 3 Levels",
   description:
-    "Browse all 16 modules in the AI for Academic Libraries curriculum. Three levels from foundations to advanced — mapped to ACRL AI Competencies and open to both practicing and digital librarians.",
+    "Browse all 16 modules in the AI for Academic Libraries curriculum. Three levels from foundations to advanced - mapped to ACRL AI Competencies and open to both practicing and digital librarians.",
 };
 
 const levels = ["foundations", "applied", "advanced"] as const;
@@ -20,7 +20,7 @@ export default function CurriculumPage() {
           Full Curriculum
         </h1>
         <p className="text-stone-600 leading-relaxed text-lg">
-          16 modules across three levels — from AI basics to building your own tools. Choose your path or work through every module in order.
+          16 modules across three levels - from AI basics to building your own tools. Choose your path or work through every module in order.
         </p>
       </div>
 
@@ -150,6 +150,9 @@ export default function CurriculumPage() {
             ACRL AI Competencies for Academic Library Workers (October 2025)
           </a>{" "}
           at the sub-competency level.
+        </p>
+        <p className="text-xs text-stone-400 italic mt-2">
+          Modules and content are subject to change and ongoing updates as the AI landscape evolves.
         </p>
       </div>
     </div>

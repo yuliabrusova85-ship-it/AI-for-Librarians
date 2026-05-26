@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Resources — AI for Academic Libraries",
+  title: "Resources - AI for Academic Libraries",
   description:
-    "Curated resources for academic librarians learning AI — official frameworks, active communities, practical tools, and verified research. Updated regularly.",
+    "Curated resources for academic librarians learning AI - official frameworks, active communities, practical tools, and verified research. Updated regularly.",
 };
 
 const resourceSections = [
@@ -30,7 +30,7 @@ const resourceSections = [
         date: "April 2024",
         url: "https://www.arl.org/resources/research-libraries-guiding-principles-for-artificial-intelligence/",
         description:
-          "Seven guiding principles including the essential 'No Human, No AI' — consequential decisions must not be delegated entirely to AI. Required reading for anyone developing library AI policy.",
+          "Seven guiding principles including the essential 'No Human, No AI' - consequential decisions must not be delegated entirely to AI. Required reading for anyone developing library AI policy.",
         tag: "Essential",
         tagColor: "#0F6E56",
         tagBg: "#E1F5EE",
@@ -89,7 +89,7 @@ const resourceSections = [
       {
         title: "Pulse of the Library Survey",
         org: "Clarivate",
-        date: "Annual — most recent: October 2025",
+        date: "Annual - most recent: October 2025",
         url: "https://clarivate.com/pulse-of-the-library/",
         description:
           "Annual global survey of library technology adoption. The authoritative benchmark data for AI adoption rates, training gaps, and institutional confidence. Key 2024 finding: 69% of academic libraries evaluating or implementing AI; 32% of librarians have no training available.",
@@ -110,7 +110,7 @@ const resourceSections = [
         date: null,
         url: "https://www.connectedpapers.com",
         description:
-          "Visualizes the citation network around a research paper. Not generative AI, but AI-enhanced discovery. Excellent for showing students how scholarship is connected — a strong instruction tool.",
+          "Visualizes the citation network around a research paper. Not generative AI, but AI-enhanced discovery. Excellent for showing students how scholarship is connected - a strong instruction tool.",
         tag: "Free",
         tagColor: "#0F6E56",
         tagBg: "#E1F5EE",
@@ -132,7 +132,7 @@ const resourceSections = [
         date: null,
         url: "https://consensus.app",
         description:
-          "Searches peer-reviewed papers and synthesizes empirical findings. Good for quick evidence checks: 'Does exercise improve sleep quality?' — returns real papers with synthesized findings. Free tier available.",
+          "Searches peer-reviewed papers and synthesizes empirical findings. Good for quick evidence checks: 'Does exercise improve sleep quality?' - returns real papers with synthesized findings. Free tier available.",
         tag: "Free tier",
         tagColor: "#0F6E56",
         tagBg: "#E1F5EE",
@@ -161,7 +161,7 @@ const resourceSections = [
         date: null,
         url: "https://claude.ai",
         description:
-          "Strong for long documents, nuanced writing, and instruction design. Handles large context windows well — paste in a full policy document and ask questions. More conservative tone by default. Claude for Work includes stronger data privacy protections.",
+          "Strong for long documents, nuanced writing, and instruction design. Handles large context windows well - paste in a full policy document and ask questions. More conservative tone by default. Claude for Work includes stronger data privacy protections.",
         tag: "Free + Paid",
         tagColor: "#57534e",
         tagBg: "#f5f5f4",
@@ -183,7 +183,7 @@ const resourceSections = [
         date: null,
         url: "https://gemini.google.com",
         description:
-          "Best integration with Google Workspace — Docs, Drive, Gmail. Real advantage if your library runs on Google. Access to Google Search reduces factual errors on current-events queries. Review your institutional Google agreement for privacy terms.",
+          "Best integration with Google Workspace - Docs, Drive, Gmail. Real advantage if your library runs on Google. Access to Google Search reduces factual errors on current-events queries. Review your institutional Google agreement for privacy terms.",
         tag: "Free + Paid",
         tagColor: "#57534e",
         tagBg: "#f5f5f4",
@@ -193,7 +193,7 @@ const resourceSections = [
   {
     id: "tools-building",
     title: "Tools: Building Without Code",
-    description: "For Level 3 — vibe coding and workflow automation",
+    description: "For Level 3 - vibe coding and workflow automation",
     resources: [
       {
         title: "Lovable",
@@ -252,7 +252,7 @@ export default function ResourcesPage() {
           Resources
         </h1>
         <p className="text-lg text-stone-600 leading-relaxed max-w-xl">
-          Curated resources — official frameworks, ongoing communities, and practical tools for library AI work. No affiliate links. No sponsored content.
+          Curated resources - official frameworks, ongoing communities, and practical tools for library AI work. No affiliate links. No sponsored content.
         </p>
       </header>
 
