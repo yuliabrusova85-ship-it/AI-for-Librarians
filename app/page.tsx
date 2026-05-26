@@ -77,6 +77,10 @@ export default function HomePage() {
               Browse the full curriculum
             </Link>
           </div>
+
+          <p className="text-xs text-stone-400 mt-4">
+            Modules are subject to change as the field evolves.
+          </p>
         </div>
       </section>
 

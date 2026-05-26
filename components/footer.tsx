@@ -20,8 +20,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-sm text-stone-500 leading-relaxed">
-              A learning portal taught by a practicing academic librarian.
-              Aligned with ACRL AI Competencies (2025).
+              A learning portal Aligned with ACRL AI Competencies (2025).
             </p>
           </div>
 
