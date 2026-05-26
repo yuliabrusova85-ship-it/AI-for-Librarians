@@ -3,7 +3,7 @@
 A structured, multi-page learning portal that teaches academic librarians how to use AI — from absolute beginner to building their own tools. Mapped to the **ACRL AI Competencies for Academic Library Workers (October 2025)** at the sub-competency level.
 
 **Live site:** *(deploy to Vercel — see deployment section)*  
-**Built by:** A reference and instruction librarian at St. Louis Community College  
+**Built by:** A MILS student and circulation desk staff at St. Louis Community College  
 **Tech stack:** Next.js 14 · Tailwind CSS · TypeScript · Vercel
 
 ---
